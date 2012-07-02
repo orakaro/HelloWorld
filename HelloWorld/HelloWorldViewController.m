@@ -57,4 +57,12 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)showMessage
+{
+    UIAlertView *helloWorldAlert = [[UIAlertView alloc]
+                                    initWithTitle:@"Hi kool guys" message:@"clap me NOW!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    // Display HelloWorld Message
+    [helloWorldAlert show];
+}
+
 @end
